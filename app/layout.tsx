@@ -1,3 +1,4 @@
+import SideBar from '../components/SideBar'
 import '../styles/globals.css'
 
 
@@ -18,11 +19,12 @@ export default function RootLayout({
 
           {/* SideBar */}
 
+          <SideBar />
+
+
           {/* ClientProvider - Notification */}
 
-          <div className='bg-[#343541] flex-1'>
-          {children}
-          </div>
+          <div className='bg-[#343541] flex-1'>{children}</div>
 
         </div>
         
