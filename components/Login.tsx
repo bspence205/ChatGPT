@@ -9,7 +9,7 @@ function Login() {
     <div className="bg-[#11A37F] h-screen flex flex-col items-center 
     justify-center text-center">
         <Image
-            src=""
+            src="https://img.icons8.com/nolan/2x/chatgpt.png"
             width={300}
             height={300}
             alt="logo"
