@@ -18,10 +18,9 @@ function ChatRow({ id }: Props) {
     const { data: session } = useSession();
     const [active, setActive] = useState(false);
 
-    const [messages] = useCollection(query(
+    const [messages] = useCollection(
         collection(db, 'users', session?.user?.email!, 'chats', id, 'messages'),
-        orderBy('createdAt', 'asc')
-    ));
+    );
 
     useEffect(() => {
         if (!pathname) return;
